@@ -218,8 +218,6 @@ public class InventoryTest {
 		assertEquals(13, inventory.getChocolate());
 		assertEquals(13, inventory.getMilk());
 		assertEquals(13, inventory.getSugar());
-		// This fails because Inventory does += instead of -= for coffee when useIngredients is called.
-		// This is the bug.
 		assertEquals(13, inventory.getCoffee());
 	}
 
